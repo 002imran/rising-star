@@ -22,23 +22,135 @@
 
     <main class="m-5">
 
-        <section>
+        <section class="container">
+        
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="img/img1.png" class="card-img-top" alt="...">
                         <h2 class="name text-center mt-2">Messi</h2>
                         <div class="card-body px-5">
-            
+        
                             <button class="btn-primary text-bg-primary px-5 py-1 rounded-2 border-0 fs-3"
-                                >Select1</button>
+                                onclick="addToCart(this)">Select1</button>
                         </div>
                     </div>
                 </div>
-            
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img2.png" class="card-img-top" alt="...">
+                        <h2 class="name text-center">Ron</h2>
+                        <div class="card-body px-5">
+                            <button class="btn-primary text-bg-primary px-5 py-1 rounded-2 border-0 fs-3"
+                                onclick="addToCart(this)">Select2</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img3.png" class="card-img-top" alt="...">
+                        <h2 class="name text-center mt-2">Samir</h2>
+        
+                        <div class="card-body px-5">
+                            <button class="btn-primary text-bg-primary px-5 py-1 rounded-2 border-0 fs-3"
+                                onclick="addToCart(this)">Select3</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- <div class="col">
+                        <div class="card" style="width: 18rem; height: 40vh;">
+                            <h2>Selected-V</h2>
+                        </div>
+                    </div> -->
+                <div class="col">
+                    <div class="card" style="width: 18rem; height: 40vh;">
+                        <h2 class="text-center py-2 bg-black text-white">Selected-V</h2>
+                        <table class="table table-zebra w-full">
+                            <!-- head -->
+                            <thead>
+                               
+                            </thead>
+                            <tbody id="products-cart">
+                              
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        
+        
+            </div>
+        
+            <div class="row row-cols-1 row-cols-md-4 g-4 mt-2">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img4.png" class="card-img-top" alt="...">
+                        <h2 class="name text-center mt-2">Ramos</h2>
+                        <div class="card-body px-5">
+                            <button class="btn-primary text-bg-primary px-5 py-1 rounded-2 border-0 fs-3 "
+                                onclick="addToCart(this)">Select4</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img5.png" class="card-img-top" alt="...">
+                        <h2 class="name text-center mt-2">Mbappe</h2>
+                        <div class="card-body px-5">
+                            <button class="btn-primary text-bg-primary px-5 py-1 rounded-2 border-0 fs-3 "
+                                onclick="addToCart(this)">Select5</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img6.png" class="card-img-top" alt="...">
+                        <h2 class="name text-center mt-2">Naymer</h2>
+                        <div class="card-body px-5">
+                            <button class="btn-primary text-bg-primary px-5 py-1 rounded-2 border-0 fs-3 "
+                                onclick="addToCart(this)">Select5</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bg-black rounded-3">
+                    <div class="card bg-black p-2">
+                      
+                        <h2 class="text-white text-center">BUDGET</h2>
+                        <div class="d-flex gap-2 fs-5">
+                            <label class="text-white ">Per Player</label>
+                            
+                            <input type="text" id="" class="fs-6 rounded-2">
+
+                        </div>
+        
+                        <button class="btn btn-primary mt-3 fs-5 rounded-2">Calculate</button>
+                        <br>
+        
+                        <div class="d-flex text-white gap-4 fs-5">
+                            <label class="">Player Expense</label>
+                            <p class="">$<span>5000</span></p>
+                        </div>
+        
+                        <label class="text-white fs-5">Manager</label>
+                        <input type="text" id="" class="fs-5 rounded-2 mt-1">
+        
+                        <label class="text-white fs-5 mt-1">Coach</label>
+                        <input type="text" id="" class="fs-5 rounded-2 mt-1">
+        
+                        <button class="btn btn-primary mt-2 fs-5 rounded-2 mt-1">Calculate
+                            Total</button>
+        
+                       <div class="d-flex justify-content-between text-white fs-4 mt-3">
+                        <label class="">Total</label>
+                        <p class="">$<span>000</span></p>
+                       </div>
+        
+                    </div>
+                </div>
+            </div>
+            </div>
             </div>
         </section>
-
     </main>
 
     <script src="/js/cart.js"></script>
