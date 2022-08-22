@@ -40,6 +40,42 @@ function displayCart(cartPlayer){
         `
         tableBody.appendChild(tr);
     }
+
+
+
+
+    //player budget functionality
+
+document.getElementById('btn-calculate').addEventListener('click', function(){
+    const playerPriceInput = document.getElementById('player-price');
+    const playerPriceInputString = playerPriceInput.value;
+
+    const perPlayerPrice = parseFloat(playerPriceInputString);
+    
+    // console.log(playerNumber, 'player');
+
+
+    const playerExpense = document.getElementById('player-expense');
+    const playerExpenseString = playerExpense.innerText;
+    const totalExpense = parseFloat(playerExpenseString);
+    
+    // const player = 5;
+    const totalPlayerExpense = perPlayerPrice * cartPlayer.length;
+    playerExpense.innerText = totalPlayerExpense;
+    console.log(totalPlayerExpense);
+
+
+
+})
+
+
+
+
+
+
+
+
+
 }
 
 function addToCart(element){
@@ -58,4 +94,36 @@ function addToCart(element){
 
     displayCart(playerCartArray)
 }
+
+
+/*
+
+//player budget functionality
+
+document.getElementById('btn-calculate').addEventListener('click', function(){
+    const playerPriceInput = document.getElementById('player-price');
+    const playerPriceInputString = playerPriceInput.value;
+
+    const perPlayerPrice = parseFloat(playerPriceInputString);
+    
+    // console.log(playerNumber, 'player');
+
+
+    const playerExpense = document.getElementById('player-expense');
+    const playerExpenseString = playerExpense.innerText;
+    const totalExpense = parseFloat(playerExpenseString);
+    
+    // const player = 5;
+    const totalPlayerExpense = perPlayerPrice * player;
+    playerExpense.innerText = totalPlayerExpense;
+    console.log(totalPlayerExpense);
+
+
+
+})
+
+*/
+
+
+
 
